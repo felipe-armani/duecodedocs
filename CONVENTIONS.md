@@ -4,6 +4,44 @@
 
 ---
 
+## ⚠️ PARA IAs E ASSISTENTES DE CÓDIGO — LEIA ANTES DE QUALQUER AÇÃO
+
+Este arquivo é a **fonte única da verdade** para o design system da documentação Duegetec. Toda alteração DEVE respeitar estas regras sem exceção.
+
+### Regras absolutas e inegociáveis
+
+| # | Regra | Violação |
+|---|-------|----------|
+| 1 | **NUNCA** crie um design novo ou alternativo | ❌ |
+| 2 | **NUNCA** adicione frameworks CSS (Bootstrap, Tailwind, etc.) | ❌ |
+| 3 | **NUNCA** altere os IDs HTML (`header`, `sidebar`, `main`, `nav`, `logoImg`, `lightbox`, etc.) | ❌ |
+| 4 | **NUNCA** crie novas classes CSS sem verificar se já existe equivalente | ❌ |
+| 5 | **NUNCA** altere as variáveis CSS de cor (`--ink`, `--violet`, `--bg`, `--fg`, etc.) | ❌ |
+| 6 | **NUNCA** troque a fonte Epilogue por outra | ❌ |
+| 7 | **NUNCA** escreva HTML inline — use os helpers `figure()`, `stepList()`, `fieldGrid()`, `callout()` | ❌ |
+| 8 | **NUNCA** altere a ordem das seções do `script.js` | ❌ |
+| 9 | **NUNCA** mude a estrutura do `index.html` (header → layout → sidebar → main → footer → lightbox) | ❌ |
+| 10 | **SEMPRE** copie o padrão de um módulo existente ao criar um novo | ✅ |
+
+### Como adicionar conteúdo NOVO corretamente
+
+1. **Novo módulo?** Copie a estrutura de um módulo existente no `CONTENT{}` do `script.js`
+2. **Novo screenshot?** Coloque em `site/assets/` com nome `XX-descritivo.png`
+3. **Novo texto?** Use APENAS os helpers: `figure()`, `stepList()`, `fieldGrid()`, `callout()`
+4. **Novo estilo?** NÃO crie — reutilize as classes existentes (`.hero`, `.module-card`, `.callout`, etc.)
+
+### Antes de finalizar qualquer alteração
+
+- [ ] Testou modo claro e modo escuro
+- [ ] Testou em mobile (375px) e desktop (1440px)
+- [ ] Navegou por todos os módulos
+- [ ] Nenhuma classe CSS nova foi criada
+- [ ] Nenhum ID foi renomeado
+- [ ] Nenhum framework externo foi adicionado
+- [ ] Helpers foram usados (nunca HTML inline)
+
+---
+
 ## 1. Estrutura de diretórios
 
 ```
@@ -288,7 +326,7 @@ Tipos:
 
 ### 5.3 Deploy
 
-O deploy para GitHub Pages é automático via GitHub Actions ao fazer push para `gh-pages-deploy` ou `main`.
+O deploy para GitHub Pages é automático via GitHub Actions ao fazer push para `main`.
 
 ---
 
