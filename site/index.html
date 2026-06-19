@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual Operacional · DueCode — Duegetec</title>
+<meta name="description" content="Documentação técnica para usuários finais da plataforma DueCode — gestão de repositórios, análise de código e pipelines.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%234f46e5'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='bold' fill='white'>D</text></svg>">
+<link rel="preload" href="fonts/Epilogue-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body class="app-shell">
+<header id="header">
+  <div class="header-inner">
+    <a href="/" class="logo" data-nav="/">
+      <img src="assets/duegetec-logo.svg" alt="Duegetec" class="logo-img" id="logoImg">
+      <span class="logo-divider"></span>
+      <div class="logo-text">
+        <span class="logo-title">Manual do Usuário · DueCode</span>
+      </div>
+    </a>
+    <div class="header-actions">
+      <div class="header-selectors">
+        <select id="projectSwitcher" class="header-select" aria-label="Selecionar projeto"></select>
+        <select id="versionSwitcher" class="header-select" aria-label="Selecionar versão"></select>
+      </div>
+      <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">☀️</button>
+    </div>
+    <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="sidebar">
+    <div class="sidebar-sticky">
+      <div class="sidebar-label">Sumário</div>
+      <div class="sidebar-divider"></div>
+      <nav id="nav"></nav>
+      <div class="sidebar-support">
+        <div class="sidebar-label">Suporte</div>
+        <p>Dúvidas operacionais devem ser direcionadas ao time de DevOps via canal interno #duecode-suporte.</p>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main"></main>
+</div>
+
+<footer>
+  <span>© Duegetec · Documentação interna</span>
+  <span class="footer-tagline">Código com qualidade, entregue com confiança</span>
+</footer>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" aria-label="Fechar">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <p id="lightboxCaption"></p>
+</div>
+
+<script src="script.js?v=1"></script>
+</body>
+</html>
