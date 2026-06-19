@@ -272,8 +272,7 @@ const CURRENT_PROJECT = "duecode";  // ← ÚNICA linha que muda por projeto
 
 ### 5.1 Branches
 
-- `main` — branch principal de desenvolvimento
-- `gh-pages-deploy` — aciona deploy automático
+- `main` — branch única de desenvolvimento e deploy
 
 ### 5.2 Commits
 

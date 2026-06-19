@@ -1,6 +1,6 @@
 # 🚀 Deploy no GitHub Pages — Passo a Passo
 
-> **Branch:** `gh-pages-deploy`  
+> **Branch:** `main`  
 > **Data:** 19/06/2026  
 > **Projeto:** DueCodeDocs — Manual Operacional DueCode
 
@@ -10,7 +10,7 @@
 
 - Repositório no GitHub (ex: `felipe-armani/duecode`)
 - Permissão de `Actions` habilitada no repositório
-- Branch `gh-pages-deploy` (já criada)
+- Branch `main` (única branch necessária)
 
 ---
 
@@ -35,14 +35,13 @@
 
 ## 🚀 3. Disparar o deploy
 
-### Opção A — Push na branch (automático)
+### Opção A — Push na branch main (automático)
 
 ```bash
-git checkout gh-pages-deploy
-git push origin gh-pages-deploy
+git add -A && git commit -m "tipo: descrição" && git push
 ```
 
-O workflow dispara automaticamente no push para `gh-pages-deploy` ou `main`.
+O workflow dispara automaticamente a cada push na branch `main`.
 
 ### Opção B — Manual (via interface)
 
